@@ -1,14 +1,14 @@
 <template>
   <header class="header">
-    <NavbarLogo/>
-    <NavbarPagination v-if="shouldShowPagination"/>
-    <NavbarModeSwitch v-if="shouldShowSwitch"/>
-    <AppBackButton v-else/>
+    <NavbarLogo />
+    <NavbarPagination v-if="shouldShowPagination" />
+    <NavbarModeSwitch v-if="shouldShowSwitch" />
+    <AppBackButton v-else />
   </header>
 </template>
 
 <script setup lang="ts">
-import {MODES} from "#constants";
+import { MODES } from '#constants'
 
 const route = useRoute()
 

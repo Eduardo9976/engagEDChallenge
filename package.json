@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint:fix": "eslint --fix --ext .ts,.js,.vue --ignore-path .gitignore ."
+    "lint:fix": "eslint --fix ."
   },
   "dependencies": {
     "@nuxt/fonts": "^0.11.3",

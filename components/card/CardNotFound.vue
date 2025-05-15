@@ -13,7 +13,7 @@ type TProps = {
   showBackButton?: boolean
 }
 
-const {showBackButton = false} = defineProps<TProps>()
+const { showBackButton = false } = defineProps<TProps>()
 </script>
 
 <style scoped>

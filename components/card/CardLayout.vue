@@ -1,10 +1,10 @@
 <template>
   <div class="card-layout">
     <CardWidget
-        v-for="character in characters"
-        :key="character.id"
-        :character
-        @click="goTo(character.id)"
+      v-for="character in characters"
+      :key="character.id"
+      :character
+      @click="goTo(character.id)"
     />
 
     <CardNotFound v-if="characters.length === 0" />
@@ -12,12 +12,12 @@
 </template>
 
 <script setup lang="ts">
-const {characters} = await useCharacters()
+const { characters } = await useCharacters()
 
 const router = useRouter()
 
 function goTo(id: string) {
-  router.push({ path: `/characters/${id}` })
+  router.push({ path: `/characters/${ id }` })
 }
 </script>
 
@@ -40,5 +40,4 @@ function goTo(id: string) {
 .card-layout > .widget:hover {
   transform: scale(1.05);
 }
-
 </style>

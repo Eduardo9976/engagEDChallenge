@@ -1,15 +1,15 @@
 <template>
   <div class="page-container">
-    <NavbarHeader/>
-    <q-separator color="gray"/>
+    <NavbarHeader />
+    <q-separator color="gray" />
 
     <main class="main-content">
-      <AppSearch v-show="shouldShowSearch"/>
-      <NuxtPage/>
+      <AppSearch v-show="shouldShowSearch" />
+      <NuxtPage />
     </main>
 
-    <q-separator color="gray"/>
-    <AppFooter/>
+    <q-separator color="gray" />
+    <AppFooter />
   </div>
 </template>
 

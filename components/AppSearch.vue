@@ -1,42 +1,42 @@
 <template>
   <div>
     <form
-        class="search"
-        @submit.prevent="onSubmit"
+      class="search"
+      @submit.prevent="onSubmit"
     >
       <q-input
-          ref="searchInput"
-          v-model="search"
-          filled
-          label="Search by character names"
-          debounce="300"
-          type="search"
-          clearable
-          dense
-          @clear="onSubmit"
+        ref="searchInput"
+        v-model="search"
+        filled
+        label="Search by character names"
+        debounce="300"
+        type="search"
+        clearable
+        dense
+        @clear="onSubmit"
       >
         <template #prepend>
-          <q-icon name="search"/>
+          <q-icon name="search" />
         </template>
 
         <template #append>
           <q-btn
-              class="q-ml-sm"
-              color="primary"
-              label="Search"
-              type="submit"
-              @click="onSubmit"
+            class="q-ml-sm"
+            color="primary"
+            label="Search"
+            type="submit"
+            @click="onSubmit"
           />
         </template>
       </q-input>
     </form>
 
-    <AppLoading v-if="loading"/>
+    <AppLoading v-if="loading" />
   </div>
 </template>
 
 <script setup lang="ts">
-const {characterByNameOrId, changePage} = await useCharacters()
+const { characterByNameOrId, changePage } = await useCharacters()
 
 const searchInput = useTemplateRef<HTMLDivElement>('searchInput')
 
@@ -45,7 +45,7 @@ const search = ref('')
 const loading = ref(false)
 
 async function fetchCharacters(name: string) {
-  await characterByNameOrId({name})
+  await characterByNameOrId({ name })
 }
 
 async function onSubmit() {

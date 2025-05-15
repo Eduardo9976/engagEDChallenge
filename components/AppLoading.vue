@@ -1,13 +1,15 @@
 <template>
-<teleport to="body">
-  <div class="loading">
-    <q-spinner-ball
+  <teleport to="body">
+    <div class="loading">
+      <q-spinner-ball
         color="primary"
         size="4em"
-    />
-    <q-tooltip  :offset="[0, 8]">Loading...</q-tooltip>
-  </div>
-</teleport>
+      />
+      <q-tooltip :offset="[0, 8]">
+        Loading...
+      </q-tooltip>
+    </div>
+  </teleport>
 </template>
 
 <script setup lang="ts">

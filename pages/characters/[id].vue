@@ -1,27 +1,29 @@
 <template>
   <div
-      v-if="character"
-      class="character"
+    v-if="character"
+    class="character"
   >
     <q-banner class="bg-primary text-white q-mb-md text-center" rounded>
       <template #avatar>
         <q-icon name="person" />
       </template>
-      <h1  class="text-h6 balance-text">Get to know more about this character from Rick and Morty.</h1>
+      <h1 class="text-h6 balance-text">
+        Get to know more about this character from Rick and Morty.
+      </h1>
     </q-banner>
 
-    <CardWidget :character show-details/>
+    <CardWidget :character show-details />
 
     <AppLoading v-if="loading" />
   </div>
   <CardNotFound
-      v-else
-      show-back-button
+    v-else
+    show-back-button
   />
 </template>
 
 <script setup lang="ts">
-import type {Character} from "#types";
+import type { Character } from '#types'
 
 const route = useRoute()
 
@@ -39,7 +41,7 @@ async function fetchCharacter(id: string) {
 
 const response = ref(await fetchCharacter(route.params.id as string))
 
-watch(() => route.params.id, async (id) => {
+watch(() => route.params.id, async id => {
   response.value = await fetchCharacter(id as string)
 })
 
