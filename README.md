@@ -1,75 +1,66 @@
-# Nuxt Minimal Starter
+# Projeto Nuxt com TypeScript, Vue e Quasar UI
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Bem-vindo ao repositório deste projeto incrível desenvolvido com **Nuxt 3**, **TypeScript**, **Vue 3** e **Quasar UI**!
 
-## Setup
+## Sobre o Projeto
 
-Make sure to install dependencies:
+Este projeto foi criado para oferecer uma experiência moderna e responsiva, utilizando as melhores práticas de desenvolvimento front-end. Ele inclui:
+
+- **Nuxt 3** para renderização SSR e SPA.
+- **TypeScript** para maior segurança e produtividade no código.
+- **Quasar UI** para componentes de interface de usuário elegantes e prontos para uso.
+- **ESLint** configurado com regras estilísticas para manter a consistência do código.
+- **Suporte a imagens otimizadas** com o módulo `@nuxt/image`.
+
+## Tecnologias Utilizadas
+
+- **Linguagens**: TypeScript, JavaScript
+- **Frameworks**: Nuxt 3, Vue 3
+- **Estilização**: CSS
+- **Ferramentas**: ESLint, npm
+- **Módulos**:
+    - `@nuxt/eslint`
+    - `@nuxt/fonts`
+    - `@nuxt/image`
+    - `nuxt-quasar-ui`
+
+## Funcionalidades
+
+- **Modo de exibição dinâmico**: Alterna entre diferentes layouts com base no contexto.
+- **Paginação inteligente**: Exibe a paginação apenas quando necessário.
+- **Design responsivo**: Interface adaptada para dispositivos móveis e desktops.
+- **Configuração avançada de ESLint**: Regras personalizadas para garantir qualidade e consistência no código.
+
+## Estrutura do Projeto
+
+```plaintext
+├── assets/         # Arquivos estáticos (CSS, imagens, etc.)
+├── components/     # Componentes Vue reutilizáveis
+├── constants/      # Constantes globais
+├── layouts/        # Layouts da aplicação
+├── pages/          # Páginas do Nuxt
+├── types/          # Tipos TypeScript
+├── nuxt.config.ts  # Configuração do Nuxt
+```
+## Como Executar o Projeto
 
 ```bash
-# npm
+# Clone o repositório
+git clone https://github.com/Eduardo9976/engagEDChallenge.git
+cd engagEDChallenge
+
+# Instale as dependências
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+# Inicie o servidor de desenvolvimento
 npm run dev
 
-# pnpm
-pnpm dev
+# Acesse no navegador
+http://localhost:3000
 
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
+# Gera os arquivos de build
 npm run build
 
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+# Inicia o servidor com o build gerado
+npm run start
 ```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
