@@ -12,6 +12,15 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
+  app: {
+    head: {
+      title: 'Rick and Morty',
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: 'https://cdn.prod.website-files.com/634e147dba65922bc49a6f65/637be4dbb0754dbbf5adb646_Favicon.png' }
+      ]
+    }
+  },
+
   css: [
     '~/assets/css/main.css'
   ],

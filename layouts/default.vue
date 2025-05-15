@@ -30,7 +30,7 @@ const shouldShowSearch = computed(() => route.name === 'characters')
   flex: 1;
   margin: 0 auto;
   max-width: 1300px;
-  padding: var(--default-space-2x) var(--default-space);
+  padding: var(--default-space-2x);
   width: 100%;
 }
 </style>

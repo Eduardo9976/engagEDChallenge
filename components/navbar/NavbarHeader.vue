@@ -36,7 +36,7 @@ const shouldShowPagination = computed(() => {
   flex-wrap: wrap;
   gap: var(--default-space);
   justify-content: space-between;
-  padding: var(--default-space);
+  padding: var(--default-space) var(--default-space-2x);
   position: sticky;
   top: 0;
   z-index: 10;

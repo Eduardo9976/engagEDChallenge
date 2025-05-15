@@ -33,7 +33,7 @@ function goTo(id: string) {
 .card-layout > .widget {
   cursor: pointer;
   flex: 0 1 100%;
-  max-width: 300px;
+  max-width: 298px;
   transition: all 0.1s;
 }
 
